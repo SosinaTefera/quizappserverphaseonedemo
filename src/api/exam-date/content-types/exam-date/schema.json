@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exam_dates",
+  "info": {
+    "singularName": "exam-date",
+    "pluralName": "exam-dates",
+    "displayName": "ExamDate"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "exactTimeAndDate": {
+      "type": "datetime"
+    }
+  }
+}

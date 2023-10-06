@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "downloadabl_exam_resources",
+  "info": {
+    "singularName": "downloadabl-exam-resource",
+    "pluralName": "downloadabl-exam-resources",
+    "displayName": "DownloadablExamResource"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "file": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

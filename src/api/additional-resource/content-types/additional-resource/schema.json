@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "additional_resources",
+  "info": {
+    "singularName": "additional-resource",
+    "pluralName": "additional-resources",
+    "displayName": "AdditionalResources"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
